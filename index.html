@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DataJam 2026 — CougarAI · University of Houston</title>
+<meta name="description" content="DataJam 2026: a two-day data science and machine learning competition at the University of Houston. Nov 7–8, 2026. Build with a real dataset and demo to industry judges.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #0d0b0c; }
+  body { font-family: 'Archivo', Helvetica, sans-serif; color: #f5f2ef; }
+  a { color: #c8102e; text-decoration: none; }
+  a:hover { color: #e8354f; }
+  ::selection { background: #c8102e; color: #fff; }
+  h1, h2 { margin: 0; }
+  .btn-primary { background: #c8102e; color: #fff; font-weight: 700; letter-spacing: 0.02em; transition: background 0.15s ease; }
+  .btn-primary:hover { background: #e8354f; color: #fff; }
+  .btn-ghost { color: #f5f2ef; border: 1px solid #3a3437; font-weight: 600; transition: border-color 0.15s ease, color 0.15s ease; }
+  .btn-ghost:hover { border-color: #c8102e; color: #fff; }
+</style>
+</head>
+<body>
+<div style="background: #0d0b0c; color: #f5f2ef; min-width: 0;">
+
+  <!-- HERO -->
+  <section style="min-height: 92vh; display: flex; flex-direction: column; padding: 28px clamp(20px, 6vw, 72px) clamp(48px, 8vh, 96px);">
+    <div style="display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <div style="width: 14px; height: 14px; background: #c8102e;"></div>
+        <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em;">COUGAR AI · UNIVERSITY OF HOUSTON</span>
+      </div>
+      <span id="days-label" style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #b8b0aa;"></span>
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; padding: clamp(40px, 8vh, 80px) 0;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: clamp(13px, 1.4vw, 16px); color: #c8102e; letter-spacing: 0.18em; margin-bottom: 20px;">NOV 7&ndash;8, 2026 · TWO DAYS · REAL DATA</div>
+      <h1 style="font-family: 'Archivo Black', 'Archivo', sans-serif; font-size: clamp(52px, 11vw, 148px); line-height: 0.92; letter-spacing: -0.02em; text-transform: uppercase;">Data<span style="color: #c8102e;">Jam</span><br>2026</h1>
+      <p style="font-size: clamp(17px, 2vw, 22px); line-height: 1.5; color: #d8d2cc; max-width: 560px; margin: 28px 0 36px; text-wrap: pretty;">A two-day data science and machine learning competition. Get a real-world problem and a dataset, build a solution with your team, and demo it to industry judges.</p>
+      <div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center;">
+        <a href="#register" class="btn-primary" style="font-size: 17px; padding: 16px 34px;">Register to compete</a>
+        <a href="#agenda" class="btn-ghost" style="font-size: 16px; padding: 16px 22px;">See the agenda</a>
+      </div>
+    </div>
+    <div style="display: flex; gap: clamp(24px, 5vw, 64px); flex-wrap: wrap; border-top: 1px solid #2a2527; padding-top: 24px;">
+      <div><div style="font-family: 'Archivo Black', sans-serif; font-size: 28px;">~80</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b8b0aa;">PARTICIPANTS</div></div>
+      <div><div style="font-family: 'Archivo Black', sans-serif; font-size: 28px;">20</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b8b0aa;">TEAMS</div></div>
+      <div><div style="font-family: 'Archivo Black', sans-serif; font-size: 28px;">4</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b8b0aa;">MAX PER TEAM</div></div>
+      <div><div style="font-family: 'Archivo Black', sans-serif; font-size: 28px;">Top 3</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b8b0aa;">TEAMS WIN PRIZES</div></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section style="background: #f5f2ef; color: #171314; padding: clamp(56px, 10vh, 110px) clamp(20px, 6vw, 72px);">
+    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(32px, 5vw, 72px);">
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; color: #c8102e; margin-bottom: 16px;">01 / THE EVENT</div>
+        <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; text-transform: uppercase;">Build something real in 48 hours</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px; font-size: 17px; line-height: 1.65; color: #3a3437;">
+        <p style="margin: 0; text-wrap: pretty;">At kickoff, every team gets a problem statement and a dataset. From there it's on you: design, build, and evaluate a data-driven solution, then present it to a panel of industry judges.</p>
+        <p style="margin: 0; text-wrap: pretty;">After the Day 1 kickoff you're free to work wherever you like. Optional workshops run throughout the day &mdash; data cleaning, machine learning models, and data visualization &mdash; so beginners have a clear on-ramp.</p>
+        <p style="margin: 0; text-wrap: pretty;">Judging is informal by design: judges rotate between teams for brief demos and Q&amp;A, so you spend your time building, not rehearsing slides.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AGENDA -->
+  <section id="agenda" style="padding: clamp(56px, 10vh, 110px) clamp(20px, 6vw, 72px);">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; color: #c8102e; margin-bottom: 16px;">02 / AGENDA</div>
+      <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; margin-bottom: 48px; text-transform: uppercase;">Two days, one build</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 4vw, 56px);">
+        <div>
+          <div style="display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid #c8102e; padding-bottom: 14px; margin-bottom: 8px; flex-wrap: wrap;">
+            <span style="font-family: 'Archivo Black', sans-serif; font-size: 24px;">DAY 1 · NOV 7</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b8b0aa;">10:00 AM &ndash; 6:00 PM</span>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">10:00 AM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Check-in</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Participant check-in opens.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">11:00 AM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Opening ceremony &amp; kickoff</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Challenge prompt reveal. Afterward you&rsquo;re free to work wherever you prefer.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">All day</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Optional workshops</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Data cleaning, machine learning models, and data visualization.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">TBD</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Lunch</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Provided on site.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">6:00 PM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Venue closes</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Keep building on your own time.</div></div>
+          </div>
+        </div>
+        <div>
+          <div style="display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid #c8102e; padding-bottom: 14px; margin-bottom: 8px; flex-wrap: wrap;">
+            <span style="font-family: 'Archivo Black', sans-serif; font-size: 24px;">DAY 2 · NOV 8</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b8b0aa;">12:00 PM &ndash; 5:00 PM</span>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">12:00 PM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Return &amp; check-in</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">All participants back on site.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">1:00 PM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Submission deadline</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Projects locked. Judges arrive. Lunch is served.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">2:00 PM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Judging</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Judges rotate between teams for brief demos and Q&amp;A &mdash; no formal presentations.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">4:00 PM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Winners &amp; awards</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Top three teams announced at the closing ceremony.</div></div>
+          </div>
+          <div style="display: flex; gap: 18px; padding: 16px 0; border-bottom: 1px solid #2a2527;">
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; min-width: 92px; flex-shrink: 0;">4&ndash;5:00 PM</span>
+            <div style="min-width: 0;"><div style="font-weight: 600; font-size: 16px;">Feedback &amp; networking</div><div style="font-size: 14px; color: #b8b0aa; line-height: 1.5; margin-top: 4px;">Talk with judges and get feedback on your project.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIZES -->
+  <section style="background: #c8102e; color: #fff; padding: clamp(56px, 10vh, 110px) clamp(20px, 6vw, 72px);">
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; margin-bottom: 16px;">03 / PRIZES</div>
+      <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; margin-bottom: 20px; text-transform: uppercase;">Top three teams take home prizes</h2>
+      <p style="font-size: 17px; line-height: 1.6; max-width: 620px; margin: 0 0 40px; text-wrap: pretty;">Winners are announced at the Day 2 closing ceremony. Every member of a winning team gets a prize &mdash; sponsored by our industry partners.</p>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <div style="border: 1px solid rgba(255,255,255,0.4); padding: 24px 28px; flex: 1; min-width: 200px;"><div style="font-family: 'Archivo Black', sans-serif; font-size: 40px;">1st</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; margin-top: 6px;">GRAND PRIZE TEAM</div></div>
+        <div style="border: 1px solid rgba(255,255,255,0.4); padding: 24px 28px; flex: 1; min-width: 200px;"><div style="font-family: 'Archivo Black', sans-serif; font-size: 40px;">2nd</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; margin-top: 6px;">RUNNER-UP TEAM</div></div>
+        <div style="border: 1px solid rgba(255,255,255,0.4); padding: 24px 28px; flex: 1; min-width: 200px;"><div style="font-family: 'Archivo Black', sans-serif; font-size: 40px;">3rd</div><div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; margin-top: 6px;">THIRD PLACE TEAM</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding: clamp(56px, 10vh, 110px) clamp(20px, 6vw, 72px);">
+    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(32px, 5vw, 72px);">
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; color: #c8102e; margin-bottom: 16px;">04 / FAQ</div>
+        <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(30px, 4vw, 44px); line-height: 1.05; text-transform: uppercase;">Good questions</h2>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <div style="border-bottom: 1px solid #2a2527; padding: 22px 0;">
+          <div style="font-weight: 700; font-size: 17px; margin-bottom: 8px;">Who can participate?</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #b8b0aa; text-wrap: pretty;">DataJam is built for University of Houston students. Around 80 participants across roughly 20 teams.</div>
+        </div>
+        <div style="border-bottom: 1px solid #2a2527; padding: 22px 0;">
+          <div style="font-weight: 700; font-size: 17px; margin-bottom: 8px;">How big can teams be?</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #b8b0aa; text-wrap: pretty;">Up to four members per team.</div>
+        </div>
+        <div style="border-bottom: 1px solid #2a2527; padding: 22px 0;">
+          <div style="font-weight: 700; font-size: 17px; margin-bottom: 8px;">Do I need machine learning experience?</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #b8b0aa; text-wrap: pretty;">No. Optional workshops on Day 1 cover data cleaning, ML models, and data visualization to get you started.</div>
+        </div>
+        <div style="border-bottom: 1px solid #2a2527; padding: 22px 0;">
+          <div style="font-weight: 700; font-size: 17px; margin-bottom: 8px;">Do we have to stay on site?</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #b8b0aa; text-wrap: pretty;">After the Day 1 kickoff you can work wherever you like. Just be back and checked in by 12:00 PM on Day 2.</div>
+        </div>
+        <div style="border-bottom: 1px solid #2a2527; padding: 22px 0;">
+          <div style="font-weight: 700; font-size: 17px; margin-bottom: 8px;">How does judging work?</div>
+          <div style="font-size: 15px; line-height: 1.6; color: #b8b0aa; text-wrap: pretty;">Judges rotate between teams for short demos and Q&amp;A instead of formal presentations.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE + CONTACT -->
+  <section style="background: #f5f2ef; color: #171314; padding: clamp(56px, 10vh, 110px) clamp(20px, 6vw, 72px);">
+    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(32px, 5vw, 64px);">
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; color: #c8102e; margin-bottom: 16px;">05 / VENUE</div>
+        <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(26px, 3vw, 36px); line-height: 1.05; margin-bottom: 14px; text-transform: uppercase;">University of Houston campus</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #3a3437; margin: 0; max-width: 460px; text-wrap: pretty;">Exact building and room details will be announced to registered participants. Lunch is provided both days.</p>
+      </div>
+      <div>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.18em; color: #c8102e; margin-bottom: 16px;">06 / CONTACT</div>
+        <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(26px, 3vw, 36px); line-height: 1.05; margin-bottom: 14px; text-transform: uppercase;">Get in touch</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #3a3437; margin: 0 0 12px; max-width: 460px; text-wrap: pretty;">Questions about competing? Reach out to the CougarAI team at <a href="mailto:cougarai@uh.edu" style="color: #c8102e; font-weight: 600;">cougarai@uh.edu</a>.</p>
+        <p style="font-size: 16px; line-height: 1.6; color: #3a3437; margin: 0; max-width: 460px; text-wrap: pretty;"><strong>Companies:</strong> sponsor a challenge, mentor and judge, or fund prizes &mdash; we'd love to partner. <a href="mailto:cougarai@uh.edu" style="color: #c8102e; font-weight: 600;">cougarai@uh.edu</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER CTA -->
+  <section id="register" style="padding: clamp(64px, 12vh, 130px) clamp(20px, 6vw, 72px); text-align: center;">
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; color: #c8102e; letter-spacing: 0.18em; margin-bottom: 18px;">NOV 7&ndash;8, 2026</div>
+    <h2 style="font-family: 'Archivo Black', sans-serif; font-size: clamp(36px, 7vw, 84px); line-height: 0.95; margin-bottom: 32px; text-transform: uppercase;">Ready to jam?</h2>
+    <a href="mailto:cougarai@uh.edu?subject=DataJam%202026%20Registration" class="btn-primary" style="display: inline-block; font-size: 18px; padding: 18px 44px;">Register to compete</a>
+    <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #6f6862; margin-top: 64px;">COUGAR AI · UNIVERSITY OF HOUSTON · DATAJAM 2026</div>
+  </section>
+</div>
+
+<script>
+  (function () {
+    var target = new Date('2026-11-07T10:00:00-06:00').getTime();
+    var days = Math.max(0, Math.ceil((target - Date.now()) / 86400000));
+    var el = document.getElementById('days-label');
+    if (el) el.textContent = days > 0 ? 'T-MINUS ' + days + ' DAYS' : 'HAPPENING NOW';
+  })();
+</script>
+</body>
+</html>
